@@ -4,12 +4,18 @@ This project is a browser-based n‑body simulation built with [Three.js](https:
 
 ## Project Structure
 src/
-├── index.js # Application entry point; sets up scene and starts simulation 
-├── SceneManager.js # Manages the Three.js scene, camera, renderer, and controls 
-├── SimulationManager.js # Handles simulation loop and physics updates 
-├── Physics.js # Contains physics utilities and the RK4 integrator 
-├── Body.js # Defines the CelestialBody class for creating bodies 
-├── Trail.js # Manages the trail effect for orbiting bodies 
+├── index.js # Application entry point; sets up scene and starts simulation
+
+├── SceneManager.js # Manages the Three.js scene, camera, renderer, and controls
+
+├── SimulationManager.js # Handles simulation loop and physics updates
+
+├── Physics.js # Contains physics utilities and the RK4 integrator
+
+├── Body.js # Defines the CelestialBody class for creating bodies
+
+├── Trail.js # Manages the trail effect for orbiting bodies
+
 └── Utils.js # Provides utility functions (e.g., label creation, texture loader)
 
 ## Setup Instructions
