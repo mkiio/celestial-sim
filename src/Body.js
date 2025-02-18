@@ -31,8 +31,9 @@ export class CelestialBody {
         // Create and attach a label.
         const label = createLabel(name, {
             fontsize: 32,
-            borderColor: { r: 0, g: 0, b: 0, a: 1.0 },
-            backgroundColor: { r: 255, g: 255, b: 255, a: 0.7 }
+            fontColor: { r: 255, g: 255, b: 255, a: 1.0 },
+            borderColor: { r: 22, g:22, b: 22, a: 1.0 },
+            backgroundColor: { r: 22, g: 22, b: 22, a: 0.7 }
         });
         label.position.set(0, radius * 1e-6 + 10, 0);
         this.mesh.add(label);
