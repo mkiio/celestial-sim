@@ -1,4 +1,4 @@
-# n-Body Simulation (Orbiting Bodies Around Earth)
+# n-Body Simulation (Orbiting Bodies)
 
 This project is a browser-based n‑body simulation built with [Three.js](https://threejs.org/). 
 
