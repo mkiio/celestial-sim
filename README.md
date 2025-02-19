@@ -2,6 +2,9 @@
 
 This project is a browser-based n‑body simulation built with [Three.js](https://threejs.org/). 
 
+![Screen shot](screenshot.png)
+
+
 ## Project Structure
 src/  
 ├── index.js # Application entry point; sets up scene and starts simulation\
