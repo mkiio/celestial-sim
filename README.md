@@ -15,7 +15,7 @@ src/
 public/  
 ├── data/ # Celestial body data sets\
 ├── textures/ # Celestial body textures\
-└── index.html # Application container page\
+└── index.html # Application container page
 
 ## Setup Instructions
 
