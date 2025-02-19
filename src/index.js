@@ -26,7 +26,7 @@ const simulationManager = new SimulationManager({
 // Load bodies from the JSON file and instantiate them.
 async function init() {
     // Fetch the JSON data
-    const response = await fetch('data/earth-origin.json');
+    const response = await fetch('data/earth-moon.json');
     const bodiesData = await response.json();
 
     bodiesData.forEach(bodyData => {
