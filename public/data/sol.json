@@ -1,0 +1,75 @@
+[
+    {
+      "name": "Sun",
+      "mass": 1.98847e30,
+      "radius": 695700000,
+      "texture": "textures/sun_diffuse.jpg",
+      "initialPosition": { "x": 0, "y": 0, "z": 0 },
+      "initialVelocity": { "x": 0, "y": 0, "z": 0 }
+    },
+    {
+      "name": "Mercury",
+      "mass": 3.3011e23,
+      "radius": 2439700,
+      "texture": "textures/mercury_diffuse.jpg",
+      "initialPosition": { "x": 57909227000, "y": 0, "z": 0 },
+      "initialVelocity": { "x": 0, "y": 47360, "z": 0 }
+    },
+    {
+      "name": "Venus",
+      "mass": 4.8675e24,
+      "radius": 6051800,
+      "texture": "textures/venus_diffuse.jpg",
+      "initialPosition": { "x": 108209475000, "y": 0, "z": 0 },
+      "initialVelocity": { "x": 0, "y": 35020, "z": 0 }
+    },
+    {
+      "name": "Earth",
+      "mass": 5.97237e24,
+      "radius": 6371000,
+      "texture": "textures/earth_diffuse.jpg",
+      "initialPosition": { "x": 149598262000, "y": 0, "z": 0 },
+      "initialVelocity": { "x": 0, "y": 29780, "z": 0 }
+    },
+    {
+      "name": "Mars",
+      "mass": 6.4171e23,
+      "radius": 3389500,
+      "texture": "textures/mars_diffuse.jpg",
+      "initialPosition": { "x": 227943824000, "y": 0, "z": 0 },
+      "initialVelocity": { "x": 0, "y": 24077, "z": 0 }
+    },
+    {
+      "name": "Jupiter",
+      "mass": 1.8982e27,
+      "radius": 69911000,
+      "texture": "textures/jupiter_diffuse.jpg",
+      "initialPosition": { "x": 778340821000, "y": 0, "z": 0 },
+      "initialVelocity": { "x": 0, "y": 13070, "z": 0 }
+    },
+    {
+      "name": "Saturn",
+      "mass": 5.6834e26,
+      "radius": 58232000,
+      "texture": "textures/saturn_diffuse.jpg",
+      "initialPosition": { "x": 1426666422000, "y": 0, "z": 0 },
+      "initialVelocity": { "x": 0, "y": 9690, "z": 0 }
+    },
+    {
+      "name": "Uranus",
+      "mass": 8.6810e25,
+      "radius": 25362000,
+      "texture": "textures/uranus_diffuse.jpg",
+      "initialPosition": { "x": 2870658186000, "y": 0, "z": 0 },
+      "initialVelocity": { "x": 0, "y": 6810, "z": 0 }
+    },
+    {
+      "name": "Neptune",
+      "mass": 1.02413e26,
+      "radius": 24622000,
+      "texture": "textures/neptune_diffuse.jpg",
+      "initialPosition": { "x": 4498396441000, "y": 0, "z": 0 },
+      "initialVelocity": { "x": 0, "y": 5430, "z": 0 }
+    }
+  ]
+  

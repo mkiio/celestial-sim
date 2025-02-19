@@ -6,9 +6,8 @@ import { Trail } from './Trail.js';
 import { textureLoader } from './Utils.js';
 
 // === Physical Constants (SI Units) ===
-const G = 6.67430e-11;             // gravitational constant
-const earthMass = 5.972e24;        // kg
-const earthMoonDistance = 384.4e6; // m
+const G = 6.67430e-11;      // gravitational constant
+const earthMass = 5.972e24; // kg
 
 // A scale factor to convert SI units to scene units.
 const scale = 1e-6;
@@ -27,7 +26,7 @@ const simulationManager = new SimulationManager({
 // Load bodies from the JSON file and instantiate them.
 async function init() {
     // Fetch the JSON data
-    const response = await fetch('data/earth-origin.json');
+    const response = await fetch('data/earth-moon.json');
     const bodiesData = await response.json();
 
     bodiesData.forEach(bodyData => {
@@ -57,14 +56,16 @@ async function init() {
         sceneManager.addToScene(body.mesh);
         // Register the body with the simulation manager.
         simulationManager.addBody(body);
-        // For the Moon, also create and set up a trail.
-        if (bodyData.name === "Moon") {
-            const moonTrail = new Trail({
-                orbitCircumference: 2 * Math.PI * earthMoonDistance,
+        // Calculate the magnitude of the starting position vector.
+        const startingDistance = initialPosition.length();
+        // Create a trail only if the starting distance is not zero.
+        if (startingDistance > 0) {
+            const trail = new Trail({
+                orbitCircumference: 2 * Math.PI * startingDistance,
                 scale: scale
             });
-            sceneManager.addToScene(moonTrail.line);
-            simulationManager.setTrail(body, moonTrail);
+            sceneManager.addToScene(trail.line);
+            simulationManager.setTrail(body, trail);
         }
     });
     // Start the simulation after all bodies have been added.

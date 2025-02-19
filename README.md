@@ -25,3 +25,7 @@ This project uses Three.js. Ensure you have Node.js installed, then run:
 
 ```npm install
 npm start
+```
+## License
+
+Released under the MIT License – freely modify and distribute for your needs.
