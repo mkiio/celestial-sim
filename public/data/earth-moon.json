@@ -3,7 +3,7 @@
     "name": "Earth",
     "mass": 5.972e24,
     "radius": 6371000,
-    "texture": "textures/earth_diffuse.jpg",
+    "texture": "textures/8k_earth_daymap.jpg",
     "initialPosition": { "x": 0, "y": 0, "z": 0 },
     "initialVelocity": { "x": 0, "y": 0, "z": 0 }
   },
@@ -11,7 +11,7 @@
     "name": "Moon",
     "mass": 7.34767309e22,
     "radius": 1737000,
-    "texture": "textures/moon_diffuse.jpg",
+    "texture": "textures/8k_moon.jpg",
     "initialPosition": { "x": 384400000, "y": 0, "z": 0 },
     "initialVelocity": { "x": 0, "y": 1018, "z": 0 }
   }

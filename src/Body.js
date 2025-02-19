@@ -11,8 +11,9 @@ export class CelestialBody {
      * @param {THREE.Texture} options.texture
      * @param {THREE.Vector3} options.initialPosition - in SI units.
      * @param {THREE.Vector3} options.initialVelocity - in SI units.
+     * @param {number} [options.scale=1e-6] - Scale factor for rendering the body.
      */
-    constructor({ name, mass, radius, texture, initialPosition, initialVelocity }) {
+    constructor({ name, mass, radius, texture, initialPosition, initialVelocity, scale = 1e-6 }) {
         this.name = name;
         this.mass = mass;
         this.radius = radius;
@@ -21,10 +22,11 @@ export class CelestialBody {
         this.simPosition = initialPosition.clone();
         this.simVelocity = initialVelocity.clone();
 
-        // Create a sphere geometry.
-        // (Here we apply a scale factor of 1e-6 to create a manageable size.
-        // You can also choose to pass the scale factor from your simulation manager.)
-        const geometry = new THREE.SphereGeometry(radius * 1e-6, 64, 64);
+        // Use the provided scale factor.
+        const meshScale = scale;
+
+        // Create a sphere geometry with the scale factor applied.
+        const geometry = new THREE.SphereGeometry(radius * meshScale, 64, 64);
         const material = new THREE.MeshBasicMaterial({ map: texture });
         this.mesh = new THREE.Mesh(geometry, material);
 
@@ -32,10 +34,11 @@ export class CelestialBody {
         const label = createLabel(name, {
             fontsize: 32,
             fontColor: { r: 255, g: 255, b: 255, a: 1.0 },
-            borderColor: { r: 22, g:22, b: 22, a: 1.0 },
+            borderColor: { r: 22, g: 22, b: 22, a: 1.0 },
             backgroundColor: { r: 22, g: 22, b: 22, a: 0.7 }
         });
-        label.position.set(0, radius * 1e-6 + 10, 0);
+        // Adjust the label's vertical position using the same scale.
+        label.position.set(0, radius * meshScale + 10, 0);
         this.mesh.add(label);
     }
 }

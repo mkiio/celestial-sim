@@ -1,6 +1,6 @@
 # n-Body Simulation (Orbiting Bodies Around Earth)
 
-This project is a browser-based n‑body simulation built with [Three.js](https://threejs.org/). The simulation focuses on celestial bodies orbiting Earth and uses an object‑oriented, modular design that cleanly separates physics (simulation) from rendering. The project is designed to be extended—for example, to add more bodies, integrate a detailed UI, or incorporate more complex gravitational interactions.
+This project is a browser-based n‑body simulation built with [Three.js](https://threejs.org/). 
 
 ## Project Structure
 src/  
@@ -11,6 +11,11 @@ src/
 ├── Body.js # Defines the CelestialBody class for creating bodies\
 ├── Trail.js # Manages the trail effect for orbiting bodies\
 └── Utils.js # Provides utility functions (e.g., label creation, texture loader)\
+
+public/  
+├── data/ # Celestial body data sets\
+├── textures/ # Celestial body textures\
+└── index.html # Application container page\
 
 ## Setup Instructions
 
